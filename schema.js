@@ -42,6 +42,60 @@ const schema = buildSchema(`
     sizes: [SandwichSize!]!
     upgrades: [UpgradeOption]
   }
+
+  type HotSandwich {
+    name: String!
+    description: String!
+    breadOption: [String!]!
+    price: Float!
+  }
+
+  type SaladOption {
+    saladOption: String!
+    price: Float!
+  }
+
+  type Soup {
+    name: String!
+    price: Float
+    soupCombo: [SaladOption!]!
+  }
+
+  type Fajitas {
+    name: String!
+    description: String!
+    price: Float!
+  }
+
+  type Tacos {
+    name: String!
+    description: String!
+    price: Float!
+  }
+
+  type AmountOption {
+    amount: String!
+    price: Float!
+  }
+
+  type Enchiladas {
+    name: String!
+    description: String!
+    amounts: [AmountOption!]!
+  }
+
+  type Quiche {
+    name: String!
+    description: String!
+    price: Float!
+  }
+
+  type GreenSalads {
+    name: String!
+    description: String!
+    price: Float!
+  }
+
 `);
 
 exports.schema = schema;
