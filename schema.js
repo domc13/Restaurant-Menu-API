@@ -4,7 +4,25 @@ const schema = buildSchema(`
   type Query {
     hello: String
     age: Int
+    getOneItem(item: GetOneItemInput!): MenuItem!
     getItemsByCategory(category: String!): [MenuItem!]!
+    getAllItems: [MenuItem!]!
+    calcTotalPrice(items: [itemPriceInput!]!): Float!
+  }
+
+  input GetOneItemInput {
+    category: String!
+    name: String!
+  }
+
+  input itemPriceInput {
+    category: String!
+    name: String!
+    size: String
+    upgradeOption: String
+    saladOption: String
+    amount: String
+    quantity: Int!
   }
 
   type MenuItem {
@@ -25,8 +43,8 @@ const schema = buildSchema(`
     price: Float!
   }
 
-  type UpgradeOption {
-    description: String!
+  type UpgradeOptions {
+    upgradeOption: String!
     price: Float!
   }
   
@@ -40,7 +58,7 @@ const schema = buildSchema(`
     description: String!
     breadOption: [String!]!
     sizes: [SandwichSize!]!
-    upgrades: [UpgradeOption]
+    upgrades: [UpgradeOptions]
   }
 
   type HotSandwich {

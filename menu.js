@@ -58,9 +58,9 @@ const menu = {
         {"size": "full", "price": 9.25}
       ],
       "upgrades": [
-        { "description": "Half pasta salad of the day", "price": 1.50 },
-        { "description": "French onion soup", "price": 1.50 },
-        { "description": "Soup of the day", "price": 1.50 }
+        { "upgradeOption": "Half pasta salad of the day", "price": 1.50 },
+        { "upgradeOption": "French onion soup", "price": 1.50 },
+        { "upgradeOption": "Soup of the day", "price": 1.50 }
       ]
     },
     {
@@ -72,9 +72,9 @@ const menu = {
         {"size": "full", "price": 9.25}
       ],
       "upgrades": [
-        { "description": "1/2 pasta salad of the day", "price": 1.50 },
-        { "description": "French onion soup", "price": 1.50 },
-        { "description": "Soup of the day", "price": 1.50 }
+        { "upgradeOption": "1/2 pasta salad of the day", "price": 1.50 },
+        { "upgradeOption": "French onion soup", "price": 1.50 },
+        { "upgradeOption": "Soup of the day", "price": 1.50 }
       ]
     },
     {
@@ -86,9 +86,9 @@ const menu = {
         {"size": "full", "price": 9.25}
       ],
       "upgrades": [
-        { "description": "Half pasta salad of the day", "price": 1.50 },
-        { "description": "French onion soup", "price": 1.50 },
-        { "description": "Soup of the day", "price": 1.50 }
+        { "upgradeOption": "Half pasta salad of the day", "price": 1.50 },
+        { "upgradeOption": "French onion soup", "price": 1.50 },
+        { "upgradeOption": "Soup of the day", "price": 1.50 }
       ]
     },
     {
@@ -100,9 +100,9 @@ const menu = {
         {"size": "full", "price": 9.25}
       ],
       "upgrades": [
-        { "description": "Half pasta salad of the day", "price": 1.50 },
-        { "description": "French onion soup", "price": 1.50 },
-        { "description": "Soup of the day", "price": 1.50 }
+        { "upgradeOption": "Half pasta salad of the day", "price": 1.50 },
+        { "upgradeOption": "French onion soup", "price": 1.50 },
+        { "upgradeOption": "Soup of the day", "price": 1.50 }
       ]
     }
   ],
