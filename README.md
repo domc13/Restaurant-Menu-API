@@ -90,7 +90,8 @@ Additional Notes
 
     - Requires an input of category ("Appetizers", "Entrees", "Cold Sandwiches", "Hot Sandwiches", "Soups", "Fajitas", "Tacos", "Enchiladas", "Quiche" or "Green Salads")
     - Requires an input of name (Can reference name of item through `menu.js`)
+    - Requires an input of quantity (>= 1)
     - Only category Cold Sandwiches require an input for size ("half" or "full") and an input for upgradeOption ("Half pasta salad of the day", "French onion soup", or "Soup of the day")
     - Only category Soup requires an input for saladOption ("small green salad", "fresh fruit", "house pasta" or "half pasta of the day")
     - Only category Enchiladas require an input for amount ("uno", "dos" or "tres")
-    - The rest of categories only require category and name
+    - The rest of categories only require category, name, and quantity
