@@ -4,9 +4,9 @@
 
 ## Installation
 
-1.  Fork and clone the repository to your local machine
-2.  Install dependencies with `npm install`
-3.  Run `node server.js` to spin up the server
+1. Clone the repository to your local machine
+2. Install dependencies with `npm install`
+3. Run `node server.js` to spin up the server
 
 <br>
 
@@ -18,7 +18,7 @@
 
 <br>
 
-Here is a sample query that can be added to the input field:
+Here are sample queries that can be added to the input field:
 
 ```
 query {
