@@ -15,7 +15,7 @@ describe('getOneItem', () => {
     expect(() => rootValue.getOneItem({ item })).toThrow("Category 'Greene Salads' not found. Please check the category name.");
   });
 
-  test("throws error if item not found", () => {
+  test("throws error if item name not found", () => {
     const item = { category: "Green Salads", name: "Southwest Chicken" };
     expect(() => rootValue.getOneItem({ item })).toThrow("Menu item not found for Southwest Chicken in Green Salads");
   });
