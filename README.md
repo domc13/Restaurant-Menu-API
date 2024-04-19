@@ -22,7 +22,6 @@ Here is a sample query that can be added to the input field:
 
 ```
 query {
-
   getOneItem(item: {
     category: "Green Salads"
     name: "Grilled Red Trout"
@@ -30,18 +29,30 @@ query {
       name
       description
   }
+}
+```
 
-  getItemsByCategory(category: "Cold Sandwiches") {
+```
+query {
+  getItemsByCategory(category: "Appetizers") {
     name
     description
     price
   }
+}
+```
 
+```
+query {
   getAllItems {
     name
     description
   }
+}
+```
 
+```
+query {
   calcTotalPrice(items: [
   {
     category: "Appetizers",
@@ -75,12 +86,12 @@ Additional Notes
 
 1.  `getOneItem`: Returns information for one item on the menu
 
-    - Requires an input of category ("Appetizers", "Entrees", "Cold Sandwiches", "Hot Sandwiches", "Soups", "Fajitas", "Tacos", "Enchiladas", "Quiche" or "Green Salads")
+    - Requires an input of category ("Appetizers", "Entrees", "Cold Sandwiches", "Hot Sandwiches", "Soup", "Fajitas", "Tacos", "Enchiladas", "Quiche" or "Green Salads")
     - Requires an input of name (Can reference name of item through `menu.js`)
 
 2.  `getItemsByCategory`: Returns all items under one input category
 
-    - Requires an input of category ("Appetizers", "Entrees", "Cold Sandwiches", "Hot Sandwiches", "Soups", "Fajitas", "Tacos", "Enchiladas", "Quiche" or "Green Salads")
+    - Requires an input of category ("Appetizers", "Entrees", "Cold Sandwiches", "Hot Sandwiches", "Soup", "Fajitas", "Tacos", "Enchiladas", "Quiche" or "Green Salads")
 
 3.  `getAllItems`: Returns all items on the menu
 
@@ -88,10 +99,16 @@ Additional Notes
 
 4.  `calcTotalPrice`: Returns total price of items selected from the menu
 
-    - Requires an input of category ("Appetizers", "Entrees", "Cold Sandwiches", "Hot Sandwiches", "Soups", "Fajitas", "Tacos", "Enchiladas", "Quiche" or "Green Salads")
+    - Requires an input of category ("Appetizers", "Entrees", "Cold Sandwiches", "Hot Sandwiches", "Soup", "Fajitas", "Tacos", "Enchiladas", "Quiche" or "Green Salads")
     - Requires an input of name (Can reference name of item through `menu.js`)
     - Requires an input of quantity (>= 1)
-    - Only category Cold Sandwiches require an input for size ("half" or "full") and an input for upgradeOption ("Half pasta salad of the day", "French onion soup", or "Soup of the day")
-    - Only category Soup requires an input for saladOption ("small green salad", "fresh fruit", "house pasta" or "half pasta of the day")
+    - Only category Cold Sandwiches require an input for size ("half" or "full") and an input for upgradeOption ("Half pasta salad of the day", "French onion soup", "Soup of the day", or null)
+    - Only category Soup requires an input for saladOption ("small green salad", "fresh fruit", "house pasta", "half pasta of the day", or null)
     - Only category Enchiladas require an input for amount ("uno", "dos" or "tres")
     - The rest of categories only require category, name, and quantity
+
+<br>
+
+## Testing
+
+1. Run `npm test` to run all tests
